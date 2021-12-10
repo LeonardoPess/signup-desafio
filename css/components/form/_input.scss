@@ -1,0 +1,16 @@
+.input {
+  width: 100%;
+
+  padding: 1rem 2rem;
+
+  border-radius: 10px;
+  border: 1px solid var(--gray-100);
+  color: var(--blue-1000);
+  font-size: .8rem;
+  font-weight: bold;
+  outline: none;
+
+  &:focus, &:hover {
+    border: 1px solid var(--blue-500);
+  }
+}

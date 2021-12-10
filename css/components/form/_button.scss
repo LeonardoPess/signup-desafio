@@ -1,0 +1,18 @@
+.button {
+  width: 100%;
+
+  padding: 1rem 2rem;
+
+  background: var(--green-500);
+  border: none;
+  box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+  font-weight: 500;
+  border-radius: 5px;
+
+  transition: .2s;
+
+  &:hover {
+    background: var(--green-300);
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+  }
+}
