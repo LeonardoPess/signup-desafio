@@ -83,7 +83,7 @@ a {
 .input {
   width: 100%;
   padding: 1rem 2rem;
-  border-radius: 10px;
+  border-radius: 5px;
   border: 1px solid var(--gray-100);
   color: var(--blue-1000);
   font-size: .8rem;
@@ -146,7 +146,8 @@ a {
 }
 
 .signup .container .text-wrapper {
-  padding: 4rem;
+  width: 100%;
+  padding: 3rem;
 }
 
 @media (max-width: 1024px) {
@@ -170,6 +171,7 @@ a {
 
 .signup .container .form-wrapper {
   max-width: 540px;
+  width: 100%;
 }
 
 .signup .container .form-wrapper > p {
@@ -192,8 +194,40 @@ a {
           box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
 }
 
-.signup .container .form-wrapper form input + input {
+.signup .container .form-wrapper form .input-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.signup .container .form-wrapper form .input-wrapper + div {
   margin-top: 1.3rem;
+}
+
+.signup .container .form-wrapper form .input-wrapper img {
+  display: none;
+}
+
+.signup .container .form-wrapper form .input-wrapper .error-message {
+  display: none;
+}
+
+.signup .container .form-wrapper form .input-wrapper.error input {
+  border: 2px solid var(--red-500);
+}
+
+.signup .container .form-wrapper form .input-wrapper.error img {
+  display: block;
+  position: absolute;
+  top: .8rem;
+  right: 1.5rem;
+}
+
+.signup .container .form-wrapper form .input-wrapper.error .error-message {
+  margin-top: .5rem;
+  display: block;
+  text-align: right;
+  color: var(--red-500);
+  font-size: .7rem;
 }
 
 .signup .container .form-wrapper form button {
