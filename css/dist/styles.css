@@ -227,6 +227,10 @@ a {
   border: 2px solid var(--red-500);
 }
 
+.signup .container .form-wrapper form .input-wrapper.error input.color-red {
+  color: var(--red-500);
+}
+
 .signup .container .form-wrapper form .input-wrapper.error img {
   display: block;
   position: absolute;

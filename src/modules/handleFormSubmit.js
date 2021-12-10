@@ -23,6 +23,8 @@ export function initHandleSubmit() {
   const passwordInputWrapper = document.querySelector('[data-form="passwordWrapper"]');
   const passwordErrorMessage = document.querySelector('[data-form="passwordErrorMessage"]');
 
+  let hasClickedEmailInput = false;
+
   function showInputError(inputWrapper, errorMessageElement, message) {
     inputWrapper.classList.add('error');
     errorMessageElement.innerHTML = message;
@@ -30,6 +32,14 @@ export function initHandleSubmit() {
 
   function hideInputError(inputWrapper) {
     inputWrapper.classList.remove('error');
+  }
+
+  function handleClickEmailInput() {
+    if (!hasClickedEmailInput) {
+      emailInput.classList.remove('color-red');
+      emailInput.value = '';
+      hasClickedEmailInput = true;
+    }
   }
 
   function validateInputs() {
@@ -47,6 +57,10 @@ export function initHandleSubmit() {
 
     if(!validateEmail(emailInput.value)) {
       showInputError(emailInputWrapper, emailErrorMessage, 'Looks like this is not an email');
+      emailInput.classList.add('color-red');
+      emailInput.value = 'email@example/com';
+      hasClickedEmailInput = false;
+      emailInput.addEventListener('click', handleClickEmailInput);
     } else {
       hideInputError(emailInputWrapper);
     }

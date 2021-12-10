@@ -98,6 +98,10 @@
           &.error {
             input {
               border: 2px solid var(--red-500);
+
+              &.color-red {
+                color: var(--red-500);
+              }
             }
 
             img {
