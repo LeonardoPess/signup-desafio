@@ -25,31 +25,36 @@
     <div class="form-wrapper">
       <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
 
-      <form>
-        <div class="input-wrapper">
-          <input type="text" class="input" placeholder="Name">
+      <form data-form="form">
+        <div class="input-wrapper" data-form="nameWrapper">
+          <input type="text" class="input" placeholder="Name" data-form="nameInput">
           <img src="./assets/error-alert.svg" alt="Error alert">
-          <p class="error-message">First Name cannot be empty</p>
+          <p class="error-message" data-form="nameErrorMessage"></p>
         </div>
-        <div class="input-wrapper" class="error">
-          <input type="text" class="input" placeholder="Last Name">
-          <p class="error-message">Last Name cannot be empty</p>
+
+        <div class="input-wrapper" class="error" data-form="lastNameWrapper">
+          <input type="text" class="input" placeholder="Last Name" data-form="lastNameInput">
+          <img src="./assets/error-alert.svg" alt="Error alert">
+          <p class="error-message" data-form="lastNameErrorMessage"></p>
         </div>
-        <div class="input-wrapper" class="error">
-          <input type="text" class="input" placeholder="Email Address">
-          <p class="error-message">Looks like this is not an email</p>
+        <div class="input-wrapper" class="error" data-form="emailWrapper">
+          <input type="text" class="input" placeholder="Email Address" data-form="emailInput">
+          <img src="./assets/error-alert.svg" alt="Error alert">
+          <p class="error-message" data-form="emailErrorMessage"></p>
         </div>
-        <div class="input-wrapper" class="error">
-          <input type="text" class="input" placeholder="Password">
-          <p class="error-message">Password cannot be empty</p>
+        <div class="input-wrapper" class="error" data-form="passwordWrapper">
+          <input type="password" class="input" placeholder="Password" data-form="passwordInput">
+          <img src="./assets/error-alert.svg" alt="Error alert">
+          <p class="error-message" data-form="passwordErrorMessage"></p>
         </div>
 
         <button class="button">CLAIM YOUR FREE TRIAL</button>
-        <p>By clicking the button, you are agreeing to our  <a href="#">Terms and Services</a></p>
+        <p>By clicking the button, you are agreeing to our  <a href="#"></a></p>
       </form>
     </div>
   </div>
 </section>
 
+<script src="./dist/main.js"></script>
 </body>
 </html>

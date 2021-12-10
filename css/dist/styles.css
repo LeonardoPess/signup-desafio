@@ -164,9 +164,21 @@ a {
   line-height: 55px;
 }
 
+@media (max-width: 430px) {
+  .signup .container .text-wrapper h1 {
+    font-size: 2rem;
+  }
+}
+
 .signup .container .text-wrapper p {
   margin-top: 2rem;
   line-height: 26px;
+}
+
+@media (max-width: 430px) {
+  .signup .container .text-wrapper p {
+    margin-top: 1rem;
+  }
 }
 
 .signup .container .form-wrapper {
