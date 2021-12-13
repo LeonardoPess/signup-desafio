@@ -26,4 +26,4 @@
   <img src="Animate.gif">
 </p>
 
-<p align="center">Um desafio onde era preciso utilizar HTML, CSS e Javacript para desenvolver um signup responsivo e o mais próximo possível do design, tendo também a válidação dos campos enviados. 🚀🚀🚀</p>
+<p align="center">Um desafio onde foi preciso utilizar HTML, CSS e Javacript para desenvolver um signup responsivo e o mais próximo possível do design, tendo também a válidação dos campos enviados. 🚀🚀🚀</p>
